@@ -7,11 +7,9 @@ public class Health {
 		this.x = x;
 		this.y = y;
 	}
-	//клетка изменяется 
 	public void need() {
 		vary = true;
 	}
-	//клетка не  изменяется 
 	public void dont_need() {
 		vary = false;
 	}
@@ -19,17 +17,14 @@ public class Health {
 	public boolean vary_need() {
 		return vary;
 	}
-	//печать здоровой клетки 
 	public void print() 
 	{
 		System.out.print(" h ");
 	}
-	// может ли эта клетка  заразиться
 	public boolean zaraja_now()
 	{
 		return true;
 	}
-	//возврат следующего состояния 
 	public Health changes(Skin skin){
 		return this;
 	}
