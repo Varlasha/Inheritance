@@ -2,7 +2,7 @@
 public class Skin {
 	private Health[][] k1 = new Health[23][23];
 	private Health[][] k2 = new Health [23][23];
-private boolean swap = true; //показывает, какой из массивов действующий
+private boolean swap = true; 
 	
 	Health [][] k1() {
 		return this.k1;
@@ -33,14 +33,12 @@ private boolean swap = true; //показывает, какой из массивов действующий
 		k2[11][11] = new Zaraja(11, 11);
 		
 	}
-	//возврат текущей клетки 
 	public Health comeback(int x, int y) { 
 		if(swap)
 			return k1[x][y];
 		else
 			return k2[x][y];
 	}
-	// Замена клетки
 	public void Sub(Health h, int x, int y) { 
 		if(swap) {
 			k2[x][y] = h;
@@ -52,7 +50,6 @@ private boolean swap = true; //показывает, какой из массивов действующий
 		}
 		
 	}
-	//печать клетки 
 	public void print() { 
 		if (swap)
 			for(int i = 1; i < 22; i ++) {
@@ -69,7 +66,6 @@ private boolean swap = true; //показывает, какой из массивов действующий
 				System.out.println();
 				}
 	}
-    // смена состояние кожи
 	public void next () { 
 		
 		for(int i = 1; i < 22; i++)
