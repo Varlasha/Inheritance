@@ -4,17 +4,14 @@ public class Immun extends Health{
 	{super(x, y);}
 	
 	protected int time=4;
-	// может ли эта клетка  заразиться 
 	public boolean zaraja_now() 
 	{
 		return false;
-	}
-	//печать иммунной  клетки 
+	} 
 		public void print()
 	{
 		System.out.print(" i ");
 	}
-   //возврат следующего состояния  
 	public Health changes(Skin skin)
 	{
 		if (time == 0) {
