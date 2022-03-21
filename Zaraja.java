@@ -4,7 +4,6 @@ public class Zaraja extends Immun{
 	public Zaraja(int x, int y)
 	{super(x, y);}
 	protected int time=6;
-	// может ли эта клетка  заразитьс€
 	public boolean zaraja_now(Health h) 
 	{
 		Random r = new Random();
@@ -14,12 +13,10 @@ public class Zaraja extends Immun{
 	}
 	return false;	
 	}
-	//печатать заражЄнной клетку
 	public void print() 
 	{
 		System.out.print(" z ");
 	}
-	//¬озврат состо€ни€ клетки 
 	public Health changes(Skin skin)
 	{
 		Random r = new Random();
@@ -27,7 +24,6 @@ public class Zaraja extends Immun{
 			return new Immun(x,y);
 		} 
 		time--;
-	// заражение 
 	int str = Math.abs(r.nextInt());
 	int stl = Math.abs(r.nextInt()) ;
 	for (int i = -1; i <= 1; i++) {
